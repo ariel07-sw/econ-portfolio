@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weijia Song — M.S. Economics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">WS</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Weijia Song</h1>
+      <p class="hero-tagline">M.S. in Economics at Northeastern University</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-placeholder">WS</div>
+        </div>
+        <div class="about-text">
+          <span class="section-label">About Me</span>
+          <h2>Economics, strategy, and data-driven decisions</h2>
+          <p>
+            I am a Master's student in Economics at Northeastern University with a background in
+            marketing and a growing focus on data analysis, business strategy, and applied economics.
+            My experience spans business operations, content analysis, and audience research, where
+            I have used data to support decision-making in both commercial and creative industries.
+          </p>
+          <p>
+            I am especially interested in combining analytical thinking with practical problem-solving
+            in economics, business, and data-driven projects.
+          </p>
+          <a href="CV-Weijia_Song.pdf" class="btn btn-primary" id="resume-btn" target="_blank" rel="noopener" download="CV-Weijia_Song.pdf">Download Résumé</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <span class="section-label centered">Projects</span>
+      <h2 class="section-title centered">Selected Work</h2>
+
+      <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="r">R</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="econometrics">Econometrics</button>
+        <button class="filter-btn" data-filter="causal-ml">Causal ML</button>
+        <button class="filter-btn" data-filter="time-series">Time Series</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <p class="gallery-empty" id="gallery-empty">No projects match this filter yet.</p>
+
+        <article class="card" data-tags="econometrics">
+          <div class="card-tag">Econometrics</div>
+          <h3>Angrist &amp; Evans IV Replication</h3>
+          <p>
+            Replicated an instrumental variables study on fertility and female labor supply using
+            the Angrist and Evans framework. Implemented econometric analysis and interpreted
+            causal effects using applied data methods.
+          </p>
+          <div class="card-stack">
+            <span class="badge">Econometrics</span>
+            <span class="badge">IV</span>
+            <span class="badge">Regression</span>
+            <span class="badge">Applied Economics</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/ariel07-sw/angrist-evans-1998-iv-replication" class="card-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card" data-tags="python,time-series">
+          <div class="card-tag">Time Series</div>
+          <h3>Time Series Diagnostics &amp; Advanced Decomposition</h3>
+          <p>
+            Built a diagnosis-first workflow combining decomposition, stationarity testing,
+            structural break detection, and uncertainty quantification. Corrected STL and ADF
+            specification issues, applied MSTL, and developed reusable tools for applied
+            economic data analysis.
+          </p>
+          <div class="card-stack">
+            <span class="badge">Python</span>
+            <span class="badge">Time Series</span>
+            <span class="badge">STL / MSTL</span>
+            <span class="badge">ADF</span>
+            <span class="badge">Structural Breaks</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/ariel07-sw/applied-data-in-econ/tree/main/econ-lab-20-time-series" class="card-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card" data-tags="python,causal-ml">
+          <div class="card-tag">Causal ML</div>
+          <h3>DML and Causal Forests for Policy Evaluation</h3>
+          <p>
+            Estimated the causal effect of 401(k) eligibility on net financial assets using
+            DoubleML and causal forest methods. Diagnosed and fixed a broken manual DML
+            implementation, ran sensitivity analysis, and compared ATE with heterogeneity-focused
+            policy evaluation.
+          </p>
+          <div class="card-stack">
+            <span class="badge">Python</span>
+            <span class="badge">DoubleML</span>
+            <span class="badge">EconML</span>
+            <span class="badge">Causal Inference</span>
+            <span class="badge">Random Forest</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/ariel07-sw/applied-data-in-econ/blob/main/econ-lab-24-causal-ml" class="card-link" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <span class="section-label centered">Skills</span>
+      <h2 class="section-title centered">Tools &amp; Competencies</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4>Data &amp; Analysis</h4>
+          <ul>
+            <li><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div></li>
+            <li><span class="skill-name">R</span><div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div></li>
+            <li><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div></li>
+            <li><span class="skill-name">Excel</span><div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Economics &amp; Strategy</h4>
+          <ul>
+            <li><span class="skill-name">Applied Economics</span><div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div></li>
+            <li><span class="skill-name">Business Strategy</span><div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div></li>
+            <li><span class="skill-name">Market Research</span><div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div></li>
+            <li><span class="skill-name">Microeconomics</span><div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Business &amp; Operations</h4>
+          <ul>
+            <li><span class="skill-name">Content Analysis</span><div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div></li>
+            <li><span class="skill-name">Audience Research</span><div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div></li>
+            <li><span class="skill-name">Business Operations</span><div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div></li>
+            <li><span class="skill-name">Marketing</span><div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Visualization &amp; Tools</h4>
+          <ul>
+            <li><span class="skill-name">Tableau</span><div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div></li>
+            <li><span class="skill-name">Matplotlib / Seaborn</span><div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div></li>
+            <li><span class="skill-name">PowerPoint</span><div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div></li>
+            <li><span class="skill-name">Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container container-narrow">
+      <span class="section-label centered">Contact</span>
+      <h2 class="section-title centered">Let's Connect</h2>
+      <p class="contact-intro">
+        I'm open to research collaborations, internship opportunities, and conversations about
+        economics, business strategy, and data analysis. Feel free to reach out.
+      </p>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p class="form-note" id="form-note" aria-live="polite"></p>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:song.weij@northeastern.edu" class="contact-pill">song.weij@northeastern.edu</a>
+        <a href="https://linkedin.com/in/yourhandle" class="contact-pill" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/yourhandle" class="contact-pill" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built by Weijia Song · 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
